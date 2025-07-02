@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D9F6A2D2C1234567890ABCD /* JubileeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */; };
+		3D9F6A2F2C1234567890ABCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A2E2C1234567890ABCD /* ContentView.swift */; };
+		3D9F6A312C1234567890ABCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F6A302C1234567890ABCD /* Assets.xcassets */; };
+		3D9F6A342C1234567890ABCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */; };
+		3D9F6A3E2C1234567890ABCD /* JubileeWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */; };
+		3D9F6A482C1234567890ABCD /* JubileeWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D9F6A3A2C1234567890ABCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9F6A212C1234567890ABCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9F6A282C1234567890ABCD;
+			remoteInfo = JubileeWatch;
+		};
+		3D9F6A442C1234567890ABCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9F6A212C1234567890ABCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9F6A282C1234567890ABCD;
+			remoteInfo = JubileeWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D9F6A292C1234567890ABCD /* JubileeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JubileeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchApp.swift; sourceTree = "<group>"; };
+		3D9F6A2E2C1234567890ABCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D9F6A302C1234567890ABCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D9F6A392C1234567890ABCD /* JubileeWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JubileeWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchTests.swift; sourceTree = "<group>"; };
+		3D9F6A432C1234567890ABCD /* JubileeWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JubileeWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9F6A262C1234567890ABCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A362C1234567890ABCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A402C1234567890ABCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9F6A202C1234567890ABCD = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A2B2C1234567890ABCD /* JubileeWatch */,
+				3D9F6A3C2C1234567890ABCD /* JubileeWatchTests */,
+				3D9F6A462C1234567890ABCD /* JubileeWatchUITests */,
+				3D9F6A2A2C1234567890ABCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D9F6A2A2C1234567890ABCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A292C1234567890ABCD /* JubileeWatch.app */,
+				3D9F6A392C1234567890ABCD /* JubileeWatchTests.xctest */,
+				3D9F6A432C1234567890ABCD /* JubileeWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9F6A2B2C1234567890ABCD /* JubileeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */,
+				3D9F6A2E2C1234567890ABCD /* ContentView.swift */,
+				3D9F6A302C1234567890ABCD /* Assets.xcassets */,
+				3D9F6A322C1234567890ABCD /* Preview Content */,
+			);
+			path = JubileeWatch;
+			sourceTree = "<group>";
+		};
+		3D9F6A322C1234567890ABCD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D9F6A3C2C1234567890ABCD /* JubileeWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */,
+			);
+			path = JubileeWatchTests;
+			sourceTree = "<group>";
+		};
+		3D9F6A462C1234567890ABCD /* JubileeWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */,
+			);
+			path = JubileeWatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D9F6A282C1234567890ABCD /* JubileeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F6A4B2C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatch" */;
+			buildPhases = (
+				3D9F6A252C1234567890ABCD /* Sources */,
+				3D9F6A262C1234567890ABCD /* Frameworks */,
+				3D9F6A272C1234567890ABCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JubileeWatch;
+			productName = JubileeWatch;
+			productReference = 3D9F6A292C1234567890ABCD /* JubileeWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D9F6A382C1234567890ABCD /* JubileeWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F6A4E2C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatchTests" */;
+			buildPhases = (
+				3D9F6A352C1234567890ABCD /* Sources */,
+				3D9F6A362C1234567890ABCD /* Frameworks */,
+				3D9F6A372C1234567890ABCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9F6A3B2C1234567890ABCD /* PBXTargetDependency */,
+			);
+			name = JubileeWatchTests;
+			productName = JubileeWatchTests;
+			productReference = 3D9F6A392C1234567890ABCD /* JubileeWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D9F6A422C1234567890ABCD /* JubileeWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9F6A512C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatchUITests" */;
+			buildPhases = (
+				3D9F6A3F2C1234567890ABCD /* Sources */,
+				3D9F6A402C1234567890ABCD /* Frameworks */,
+				3D9F6A412C1234567890ABCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9F6A452C1234567890ABCD /* PBXTargetDependency */,
+			);
+			name = JubileeWatchUITests;
+			productName = JubileeWatchUITests;
+			productReference = 3D9F6A432C1234567890ABCD /* JubileeWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9F6A212C1234567890ABCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3D9F6A282C1234567890ABCD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					3D9F6A382C1234567890ABCD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3D9F6A282C1234567890ABCD;
+					};
+					3D9F6A422C1234567890ABCD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 3D9F6A282C1234567890ABCD;
+					};
+				};
+			};
+			buildConfigurationList = 3D9F6A242C1234567890ABCD /* Build configuration list for PBXProject "JubileeWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D9F6A202C1234567890ABCD;
+			productRefGroup = 3D9F6A2A2C1234567890ABCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D9F6A282C1234567890ABCD /* JubileeWatch */,
+				3D9F6A382C1234567890ABCD /* JubileeWatchTests */,
+				3D9F6A422C1234567890ABCD /* JubileeWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9F6A272C1234567890ABCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F6A342C1234567890ABCD /* Preview Assets.xcassets in Resources */,
+				3D9F6A312C1234567890ABCD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A372C1234567890ABCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A412C1234567890ABCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9F6A252C1234567890ABCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F6A2F2C1234567890ABCD /* ContentView.swift in Sources */,
+				3D9F6A2D2C1234567890ABCD /* JubileeWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A352C1234567890ABCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F6A3E2C1234567890ABCD /* JubileeWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9F6A3F2C1234567890ABCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9F6A482C1234567890ABCD /* JubileeWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D9F6A3B2C1234567890ABCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9F6A282C1234567890ABCD /* JubileeWatch */;
+			targetProxy = 3D9F6A3A2C1234567890ABCD /* PBXContainerItemProxy */;
+		};
+		3D9F6A452C1234567890ABCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9F6A282C1234567890ABCD /* JubileeWatch */;
+			targetProxy = 3D9F6A442C1234567890ABCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D9F6A492C1234567890ABCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D9F6A4A2C1234567890ABCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D9F6A4C2C1234567890ABCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D9F6A4D2C1234567890ABCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D9F6A4F2C1234567890ABCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch.JubileeWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JubileeWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JubileeWatch";
+			};
+			name = Debug;
+		};
+		3D9F6A502C1234567890ABCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch.JubileeWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JubileeWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JubileeWatch";
+			};
+			name = Release;
+		};
+		3D9F6A522C1234567890ABCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch.JubileeWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JubileeWatch;
+			};
+			name = Debug;
+		};
+		3D9F6A532C1234567890ABCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilebay.jubileewatch.JubileeWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JubileeWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9F6A242C1234567890ABCD /* Build configuration list for PBXProject "JubileeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F6A492C1234567890ABCD /* Debug */,
+				3D9F6A4A2C1234567890ABCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F6A4B2C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F6A4C2C1234567890ABCD /* Debug */,
+				3D9F6A4D2C1234567890ABCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F6A4E2C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F6A4F2C1234567890ABCD /* Debug */,
+				3D9F6A502C1234567890ABCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9F6A512C1234567890ABCD /* Build configuration list for PBXNativeTarget "JubileeWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9F6A522C1234567890ABCD /* Debug */,
+				3D9F6A532C1234567890ABCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D9F6A212C1234567890ABCD /* Project object */;
+}
