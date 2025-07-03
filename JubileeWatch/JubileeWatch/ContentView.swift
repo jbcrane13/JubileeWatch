@@ -22,18 +22,24 @@ struct ContentView: View {
                     Label("Map", systemImage: "map.fill")
                 }
                 .tag(2)
-            
+
+            WebcamView()
+                .tabItem {
+                    Label("Webcam", systemImage: "video.fill")
+                }
+                .tag(3)
+
             TrendsView()
                 .tabItem {
                     Label("Trends", systemImage: "chart.line.uptrend.xyaxis")
                 }
-                .tag(3)
-            
+                .tag(4)
+
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
-                .tag(4)
+                .tag(5)
         }
         .accentColor(.jubileePrimary)
     }
