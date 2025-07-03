@@ -17,9 +17,8 @@ struct DashboardView: View {
                         .transition(.move(edge: .top).combined(with: .opacity))
                     }
                     
-                    // Probability Gauge
-                    ProbabilityGaugeView(probability: viewModel.currentProbability)
-                        .frame(height: 300)
+                    // Oxygen Level Trend
+                    OxygenLevelTrendView()
                         .padding(.horizontal)
                     
                     // Environmental Conditions
@@ -44,10 +43,26 @@ class DashboardViewModel: ObservableObject {
     @Published var showHighProbabilityAlert = false
     @Published var currentConditions: [EnvironmentalCondition] = []
     @Published var recentActivities: [Activity] = []
+    @Published var isLoading = false
+    @Published var errorMessage: String?
+    
+    private let apiService = APIService()
+    private var updateTimer: Timer?
     
     init() {
-        setupMockData()
-        simulateRealTimeUpdates()
+        if Config.mockDataEnabled {
+            setupMockData()
+            simulateRealTimeUpdates()
+        } else {
+            Task {
+                await loadRealTimeData()
+            }
+            startRealTimeUpdates()
+        }
+    }
+    
+    deinit {
+        updateTimer?.invalidate()
     }
     
     private func setupMockData() {
@@ -79,6 +94,13 @@ class DashboardViewModel: ObservableObject {
                 value: "92%",
                 trend: "↑ 5% from yesterday",
                 isOptimal: true
+            ),
+            EnvironmentalCondition(
+                icon: "water.waves",
+                label: "Wave Height",
+                value: "2.5 ft",
+                trend: "↓ 0.5 ft from yesterday",
+                isOptimal: true
             )
         ]
         
@@ -89,8 +111,51 @@ class DashboardViewModel: ObservableObject {
         ]
     }
     
+    @MainActor
+    private func loadRealTimeData() async {
+        isLoading = true
+        errorMessage = nil
+        
+        do {
+            async let conditionsTask = apiService.fetchCurrentConditions()
+            async let predictionTask = apiService.fetchCurrentPrediction()
+            
+            let (conditions, prediction) = try await (conditionsTask, predictionTask)
+            
+            // Convert environmental reading to UI conditions
+            currentConditions = convertToEnvironmentalConditions(conditions)
+            currentProbability = prediction.probability
+            
+            // Check for high probability alert
+            if currentProbability > Constants.Notification.highProbabilityThreshold && !showHighProbabilityAlert {
+                showHighProbabilityAlert = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    self.showHighProbabilityAlert = false
+                }
+            }
+            
+            // TODO: Fetch recent activities from API
+            loadRecentActivities()
+            
+        } catch {
+            errorMessage = error.localizedDescription
+            // Fallback to mock data
+            setupMockData()
+        }
+        
+        isLoading = false
+    }
+    
+    private func startRealTimeUpdates() {
+        updateTimer = Timer.scheduledTimer(withTimeInterval: Constants.Notification.updateInterval, repeats: true) { _ in
+            Task {
+                await self.loadRealTimeData()
+            }
+        }
+    }
+    
     private func simulateRealTimeUpdates() {
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { _ in
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { _ in
             self.currentProbability += Double.random(in: -5...5)
             self.currentProbability = max(0, min(100, self.currentProbability))
             
@@ -99,6 +164,87 @@ class DashboardViewModel: ObservableObject {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     self.showHighProbabilityAlert = false
                 }
+            }
+        }
+    }
+    
+    private func convertToEnvironmentalConditions(_ reading: EnvironmentalReading) -> [EnvironmentalCondition] {
+        var conditions: [EnvironmentalCondition] = []
+        
+        let waterTemp = reading.waterTemperature
+        conditions.append(EnvironmentalCondition(
+            icon: "thermometer",
+            label: "Water Temp",
+            value: "\(Int(waterTemp))°F",
+            trend: calculateTrend(value: waterTemp, optimal: 75...82),
+            isOptimal: (75...82).contains(waterTemp)
+        ))
+        
+        if let oxygen = reading.dissolvedOxygen {
+            conditions.append(EnvironmentalCondition(
+                icon: "drop.fill",
+                label: "Dissolved O₂",
+                value: "\(String(format: "%.1f", oxygen)) ppm",
+                trend: calculateTrend(value: oxygen, optimal: 2.0...4.0),
+                isOptimal: (2.0...4.0).contains(oxygen)
+            ))
+        }
+        
+        let windSpeed = reading.windSpeed
+        conditions.append(EnvironmentalCondition(
+            icon: "wind",
+            label: "Wind Speed",
+            value: "\(Int(windSpeed)) mph",
+            trend: reading.windDirection,
+            isOptimal: windSpeed < 10
+        ))
+        
+        let humidity = reading.humidity
+        conditions.append(EnvironmentalCondition(
+            icon: "humidity.fill",
+            label: "Humidity",
+            value: "\(Int(humidity))%",
+            trend: calculateTrend(value: humidity, optimal: 80...95),
+            isOptimal: (80...95).contains(humidity)
+        ))
+        
+        if let waveHeight = reading.waveHeight {
+            conditions.append(EnvironmentalCondition(
+                icon: "water.waves",
+                label: "Wave Height",
+                value: "\(String(format: "%.1f", waveHeight)) ft",
+                trend: calculateTrend(value: waveHeight, optimal: 0...3),
+                isOptimal: waveHeight < 3
+            ))
+        }
+        
+        return conditions
+    }
+    
+    private func calculateTrend(value: Double, optimal: ClosedRange<Double>) -> String {
+        if optimal.contains(value) {
+            return "Optimal range"
+        } else if value < optimal.lowerBound {
+            return "Below optimal"
+        } else {
+            return "Above optimal"
+        }
+    }
+    
+    private func loadRecentActivities() {
+        // Placeholder for real API call
+        recentActivities = [
+            Activity(id: UUID(), title: "Current conditions updated", subtitle: "\(Int(currentProbability))% probability", type: .prediction),
+            Activity(id: UUID(), title: "Environmental data refreshed", subtitle: "\(currentConditions.count) metrics updated", type: .sighting)
+        ]
+    }
+    
+    func refreshData() {
+        if Config.mockDataEnabled {
+            setupMockData()
+        } else {
+            Task {
+                await loadRealTimeData()
             }
         }
     }

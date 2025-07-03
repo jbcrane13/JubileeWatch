@@ -14,4 +14,5 @@ struct EnvironmentalReading: Codable, Identifiable {
     let dissolvedOxygen: Double? // ppm
     let waterLevel: Double? // feet
     let salinity: Double? // ppt
+    let waveHeight: Double? // feet
 }

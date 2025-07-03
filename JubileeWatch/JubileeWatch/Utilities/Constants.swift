@@ -3,10 +3,22 @@ import Foundation
 struct Config {
     static let apiBaseURL = "https://api.jubileewatch.com/v1"
     static let websocketURL = "wss://api.jubileewatch.com/ws"
+    static let streamBaseURL = "https://streams.jubileewatch.com"
+    static let imageBaseURL = "https://api.jubileewatch.com/images"
     
     // Feature flags
-    static let isDebugMode = DEBUG
+    #if DEBUG
+    static let isDebugMode = true
     static let mockDataEnabled = ProcessInfo.processInfo.arguments.contains("UI_TESTING")
+    #else
+    static let isDebugMode = false
+    static let mockDataEnabled = false
+    #endif
+    
+    // API Configuration
+    static let apiTimeout: TimeInterval = 30.0
+    static let maxRetryAttempts = 3
+    static let retryDelay: TimeInterval = 1.0
 }
 
 struct Constants {

@@ -3,16 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D9F6A2D2C1234567890ABCD /* JubileeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */; };
-		3D9F6A2F2C1234567890ABCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A2E2C1234567890ABCD /* ContentView.swift */; };
-		3D9F6A312C1234567890ABCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F6A302C1234567890ABCD /* Assets.xcassets */; };
-		3D9F6A342C1234567890ABCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */; };
-		3D9F6A3E2C1234567890ABCD /* JubileeWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */; };
-		3D9F6A482C1234567890ABCD /* JubileeWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */; };
+		259AFF0F2E15BAF30029FD38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259AFEDB2E15BAF30029FD38 /* Preview Assets.xcassets */; };
+		259AFF102E15BAF30029FD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259AFF012E15BAF30029FD38 /* Assets.xcassets */; };
+		259AFF112E15BAF30029FD38 /* JubileeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF92E15BAF30029FD38 /* JubileeMapView.swift */; };
+		259AFF122E15BAF30029FD38 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEFE2E15BAF30029FD38 /* TrendsView.swift */; };
+		259AFF132E15BAF30029FD38 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED72E15BAF30029FD38 /* User.swift */; };
+		259AFF142E15BAF30029FD38 /* ProbabilityGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF72E15BAF30029FD38 /* ProbabilityGaugeView.swift */; };
+		259AFF152E15BAF30029FD38 /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFECB2E15BAF30029FD38 /* ForumPost.swift */; };
+		259AFF172E15BAF30029FD38 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEEB2E15BAF30029FD38 /* Date+Formatting.swift */; };
+		259AFF182E15BAF30029FD38 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEE52E15BAF30029FD38 /* NotificationManager.swift */; };
+		259AFF192E15BAF30029FD38 /* Sighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFECC2E15BAF30029FD38 /* Sighting.swift */; };
+		259AFF1A2E15BAF30029FD38 /* EnvironmentalReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFECF2E15BAF30029FD38 /* EnvironmentalReading.swift */; };
+		259AFF1B2E15BAF30029FD38 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF52E15BAF30029FD38 /* DashboardView.swift */; };
+		259AFF1C2E15BAF30029FD38 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEFC2E15BAF30029FD38 /* SettingsView.swift */; };
+		259AFF1D2E15BAF30029FD38 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEEF2E15BAF30029FD38 /* ChatView.swift */; };
+		259AFF1E2E15BAF30029FD38 /* AlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF32E15BAF30029FD38 /* AlertBanner.swift */; };
+		259AFF1F2E15BAF30029FD38 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEE32E15BAF30029FD38 /* LocationManager.swift */; };
+		259AFF202E15BAF30029FD38 /* JubileeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED12E15BAF30029FD38 /* JubileeEvent.swift */; };
+		259AFF212E15BAF30029FD38 /* JubileePrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED42E15BAF30029FD38 /* JubileePrediction.swift */; };
+		259AFF222E15BAF30029FD38 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEDF2E15BAF30029FD38 /* WebSocketManager.swift */; };
+		259AFF232E15BAF30029FD38 /* NotificationPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED62E15BAF30029FD38 /* NotificationPreferences.swift */; };
+		259AFF242E15BAF30029FD38 /* EnvironmentalConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF62E15BAF30029FD38 /* EnvironmentalConditionsView.swift */; };
+		259AFF252E15BAF30029FD38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFF022E15BAF30029FD38 /* ContentView.swift */; };
+		259AFF262E15BAF30029FD38 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED92E15BAF30029FD38 /* APIModels.swift */; };
+		259AFF282E15BAF30029FD38 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEDE2E15BAF30029FD38 /* APIService.swift */; };
+		259AFF292E15BAF30029FD38 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF12E15BAF30029FD38 /* ForumView.swift */; };
+		259AFF2A2E15BAF30029FD38 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEF02E15BAF30029FD38 /* CommunityView.swift */; };
+		259AFF2B2E15BAF30029FD38 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFECA2E15BAF30029FD38 /* ChatMessage.swift */; };
+		259AFF2C2E15BAF30029FD38 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEE12E15BAF30029FD38 /* CacheManager.swift */; };
+		259AFF2D2E15BAF30029FD38 /* ContributingFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFED32E15BAF30029FD38 /* ContributingFactor.swift */; };
+		259AFF2E2E15BAF30029FD38 /* JubileePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEE72E15BAF30029FD38 /* JubileePredictor.swift */; };
+		259AFF2F2E15BAF30029FD38 /* JubileeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFF042E15BAF30029FD38 /* JubileeWatchApp.swift */; };
+		259AFF302E15BAF30029FD38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEED2E15BAF30029FD38 /* Constants.swift */; };
+		259AFF312E15BAF30029FD38 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFECE2E15BAF30029FD38 /* Coordinate.swift */; };
+		259AFF322E15BAF30029FD38 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEFB2E15BAF30029FD38 /* LocationPickerView.swift */; };
+		259AFF332E15BAF30029FD38 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259AFEEA2E15BAF30029FD38 /* Color+Theme.swift */; };
+		25E0519B2E164CE10096B195 /* OxygenLevelTrendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E051972E164CE10096B195 /* OxygenLevelTrendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +63,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		259AFECA2E15BAF30029FD38 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		259AFECB2E15BAF30029FD38 /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
+		259AFECC2E15BAF30029FD38 /* Sighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sighting.swift; sourceTree = "<group>"; };
+		259AFECE2E15BAF30029FD38 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		259AFECF2E15BAF30029FD38 /* EnvironmentalReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalReading.swift; sourceTree = "<group>"; };
+		259AFED12E15BAF30029FD38 /* JubileeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeEvent.swift; sourceTree = "<group>"; };
+		259AFED32E15BAF30029FD38 /* ContributingFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributingFactor.swift; sourceTree = "<group>"; };
+		259AFED42E15BAF30029FD38 /* JubileePrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileePrediction.swift; sourceTree = "<group>"; };
+		259AFED62E15BAF30029FD38 /* NotificationPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferences.swift; sourceTree = "<group>"; };
+		259AFED72E15BAF30029FD38 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		259AFED92E15BAF30029FD38 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		259AFEDB2E15BAF30029FD38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		259AFEDE2E15BAF30029FD38 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		259AFEDF2E15BAF30029FD38 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		259AFEE12E15BAF30029FD38 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		259AFEE32E15BAF30029FD38 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		259AFEE52E15BAF30029FD38 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		259AFEE72E15BAF30029FD38 /* JubileePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileePredictor.swift; sourceTree = "<group>"; };
+		259AFEEA2E15BAF30029FD38 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		259AFEEB2E15BAF30029FD38 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		259AFEED2E15BAF30029FD38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		259AFEEF2E15BAF30029FD38 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		259AFEF02E15BAF30029FD38 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		259AFEF12E15BAF30029FD38 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		259AFEF32E15BAF30029FD38 /* AlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBanner.swift; sourceTree = "<group>"; };
+		259AFEF52E15BAF30029FD38 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		259AFEF62E15BAF30029FD38 /* EnvironmentalConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalConditionsView.swift; sourceTree = "<group>"; };
+		259AFEF72E15BAF30029FD38 /* ProbabilityGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityGaugeView.swift; sourceTree = "<group>"; };
+		259AFEF92E15BAF30029FD38 /* JubileeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeMapView.swift; sourceTree = "<group>"; };
+		259AFEFB2E15BAF30029FD38 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		259AFEFC2E15BAF30029FD38 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		259AFEFE2E15BAF30029FD38 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
+		259AFF012E15BAF30029FD38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		259AFF022E15BAF30029FD38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		259AFF032E15BAF30029FD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259AFF042E15BAF30029FD38 /* JubileeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchApp.swift; sourceTree = "<group>"; };
+		25E051972E164CE10096B195 /* OxygenLevelTrendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenLevelTrendView.swift; sourceTree = "<group>"; };
 		3D9F6A292C1234567890ABCD /* JubileeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JubileeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchApp.swift; sourceTree = "<group>"; };
-		3D9F6A2E2C1234567890ABCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3D9F6A302C1234567890ABCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D9F6A392C1234567890ABCD /* JubileeWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JubileeWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchTests.swift; sourceTree = "<group>"; };
 		3D9F6A432C1234567890ABCD /* JubileeWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JubileeWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JubileeWatchUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		25E0519D2E164D1D0096B195 /* Webcam */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Webcam; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D9F6A262C1234567890ABCD /* Frameworks */ = {
@@ -69,6 +134,243 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		259AFEC92E15BAF30029FD38 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		259AFECD2E15BAF30029FD38 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				259AFECA2E15BAF30029FD38 /* ChatMessage.swift */,
+				259AFECB2E15BAF30029FD38 /* ForumPost.swift */,
+				259AFECC2E15BAF30029FD38 /* Sighting.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		259AFED02E15BAF30029FD38 /* Environmental */ = {
+			isa = PBXGroup;
+			children = (
+				259AFECE2E15BAF30029FD38 /* Coordinate.swift */,
+				259AFECF2E15BAF30029FD38 /* EnvironmentalReading.swift */,
+			);
+			path = Environmental;
+			sourceTree = "<group>";
+		};
+		259AFED22E15BAF30029FD38 /* Historical */ = {
+			isa = PBXGroup;
+			children = (
+				259AFED12E15BAF30029FD38 /* JubileeEvent.swift */,
+			);
+			path = Historical;
+			sourceTree = "<group>";
+		};
+		259AFED52E15BAF30029FD38 /* Predictions */ = {
+			isa = PBXGroup;
+			children = (
+				259AFED32E15BAF30029FD38 /* ContributingFactor.swift */,
+				259AFED42E15BAF30029FD38 /* JubileePrediction.swift */,
+			);
+			path = Predictions;
+			sourceTree = "<group>";
+		};
+		259AFED82E15BAF30029FD38 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				259AFED62E15BAF30029FD38 /* NotificationPreferences.swift */,
+				259AFED72E15BAF30029FD38 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		259AFEDA2E15BAF30029FD38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				259AFECD2E15BAF30029FD38 /* Community */,
+				259AFED02E15BAF30029FD38 /* Environmental */,
+				259AFED22E15BAF30029FD38 /* Historical */,
+				259AFED52E15BAF30029FD38 /* Predictions */,
+				259AFED82E15BAF30029FD38 /* User */,
+				259AFED92E15BAF30029FD38 /* APIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		259AFEDC2E15BAF30029FD38 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEDB2E15BAF30029FD38 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		259AFEDD2E15BAF30029FD38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		259AFEE02E15BAF30029FD38 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEDE2E15BAF30029FD38 /* APIService.swift */,
+				259AFEDF2E15BAF30029FD38 /* WebSocketManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		259AFEE22E15BAF30029FD38 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEE12E15BAF30029FD38 /* CacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		259AFEE42E15BAF30029FD38 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEE32E15BAF30029FD38 /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		259AFEE62E15BAF30029FD38 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEE52E15BAF30029FD38 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		259AFEE82E15BAF30029FD38 /* Prediction */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEE72E15BAF30029FD38 /* JubileePredictor.swift */,
+			);
+			path = Prediction;
+			sourceTree = "<group>";
+		};
+		259AFEE92E15BAF30029FD38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEE02E15BAF30029FD38 /* API */,
+				259AFEE22E15BAF30029FD38 /* Cache */,
+				259AFEE42E15BAF30029FD38 /* Location */,
+				259AFEE62E15BAF30029FD38 /* Notifications */,
+				259AFEE82E15BAF30029FD38 /* Prediction */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		259AFEEC2E15BAF30029FD38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEEA2E15BAF30029FD38 /* Color+Theme.swift */,
+				259AFEEB2E15BAF30029FD38 /* Date+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		259AFEEE2E15BAF30029FD38 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEEC2E15BAF30029FD38 /* Extensions */,
+				259AFEED2E15BAF30029FD38 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		259AFEF22E15BAF30029FD38 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEEF2E15BAF30029FD38 /* ChatView.swift */,
+				259AFEF02E15BAF30029FD38 /* CommunityView.swift */,
+				259AFEF12E15BAF30029FD38 /* ForumView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		259AFEF42E15BAF30029FD38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEF32E15BAF30029FD38 /* AlertBanner.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		259AFEF82E15BAF30029FD38 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEF52E15BAF30029FD38 /* DashboardView.swift */,
+				259AFEF62E15BAF30029FD38 /* EnvironmentalConditionsView.swift */,
+				259AFEF72E15BAF30029FD38 /* ProbabilityGaugeView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		259AFEFA2E15BAF30029FD38 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEF92E15BAF30029FD38 /* JubileeMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		259AFEFD2E15BAF30029FD38 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEFB2E15BAF30029FD38 /* LocationPickerView.swift */,
+				259AFEFC2E15BAF30029FD38 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		259AFEFF2E15BAF30029FD38 /* Trends */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEFE2E15BAF30029FD38 /* TrendsView.swift */,
+			);
+			path = Trends;
+			sourceTree = "<group>";
+		};
+		259AFF002E15BAF30029FD38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25E0519D2E164D1D0096B195 /* Webcam */,
+				259AFEF22E15BAF30029FD38 /* Community */,
+				259AFEF42E15BAF30029FD38 /* Components */,
+				259AFEF82E15BAF30029FD38 /* Dashboard */,
+				25E051972E164CE10096B195 /* OxygenLevelTrendView.swift */,
+				259AFEFA2E15BAF30029FD38 /* Map */,
+				259AFEFD2E15BAF30029FD38 /* Settings */,
+				259AFEFF2E15BAF30029FD38 /* Trends */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		259AFF052E15BAF30029FD38 /* JubileeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				259AFEC92E15BAF30029FD38 /* App */,
+				259AFEDA2E15BAF30029FD38 /* Models */,
+				259AFEDC2E15BAF30029FD38 /* Preview Content */,
+				259AFEDD2E15BAF30029FD38 /* Resources */,
+				259AFEE92E15BAF30029FD38 /* Services */,
+				259AFEEE2E15BAF30029FD38 /* Utilities */,
+				259AFF002E15BAF30029FD38 /* Views */,
+				259AFF012E15BAF30029FD38 /* Assets.xcassets */,
+				259AFF022E15BAF30029FD38 /* ContentView.swift */,
+				259AFF032E15BAF30029FD38 /* Info.plist */,
+				259AFF042E15BAF30029FD38 /* JubileeWatchApp.swift */,
+			);
+			path = JubileeWatch;
+			sourceTree = "<group>";
+		};
 		3D9F6A202C1234567890ABCD = {
 			isa = PBXGroup;
 			children = (
@@ -92,26 +394,14 @@
 		3D9F6A2B2C1234567890ABCD /* JubileeWatch */ = {
 			isa = PBXGroup;
 			children = (
-				3D9F6A2C2C1234567890ABCD /* JubileeWatchApp.swift */,
-				3D9F6A2E2C1234567890ABCD /* ContentView.swift */,
-				3D9F6A302C1234567890ABCD /* Assets.xcassets */,
-				3D9F6A322C1234567890ABCD /* Preview Content */,
+				259AFF052E15BAF30029FD38 /* JubileeWatch */,
 			);
 			path = JubileeWatch;
-			sourceTree = "<group>";
-		};
-		3D9F6A322C1234567890ABCD /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3D9F6A332C1234567890ABCD /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3D9F6A3C2C1234567890ABCD /* JubileeWatchTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D9F6A3D2C1234567890ABCD /* JubileeWatchTests.swift */,
 			);
 			path = JubileeWatchTests;
 			sourceTree = "<group>";
@@ -119,7 +409,6 @@
 		3D9F6A462C1234567890ABCD /* JubileeWatchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3D9F6A472C1234567890ABCD /* JubileeWatchUITests.swift */,
 			);
 			path = JubileeWatchUITests;
 			sourceTree = "<group>";
@@ -138,6 +427,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25E0519D2E164D1D0096B195 /* Webcam */,
 			);
 			name = JubileeWatch;
 			productName = JubileeWatch;
@@ -188,7 +480,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					3D9F6A282C1234567890ABCD = {
 						CreatedOnToolsVersion = 15.0;
@@ -204,7 +496,7 @@
 				};
 			};
 			buildConfigurationList = 3D9F6A242C1234567890ABCD /* Build configuration list for PBXProject "JubileeWatch" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -228,8 +520,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9F6A342C1234567890ABCD /* Preview Assets.xcassets in Resources */,
-				3D9F6A312C1234567890ABCD /* Assets.xcassets in Resources */,
+				259AFF0F2E15BAF30029FD38 /* Preview Assets.xcassets in Resources */,
+				259AFF102E15BAF30029FD38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +546,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9F6A2F2C1234567890ABCD /* ContentView.swift in Sources */,
-				3D9F6A2D2C1234567890ABCD /* JubileeWatchApp.swift in Sources */,
+				259AFF112E15BAF30029FD38 /* JubileeMapView.swift in Sources */,
+				259AFF122E15BAF30029FD38 /* TrendsView.swift in Sources */,
+				259AFF132E15BAF30029FD38 /* User.swift in Sources */,
+				259AFF142E15BAF30029FD38 /* ProbabilityGaugeView.swift in Sources */,
+				259AFF152E15BAF30029FD38 /* ForumPost.swift in Sources */,
+				259AFF172E15BAF30029FD38 /* Date+Formatting.swift in Sources */,
+				259AFF182E15BAF30029FD38 /* NotificationManager.swift in Sources */,
+				259AFF192E15BAF30029FD38 /* Sighting.swift in Sources */,
+				259AFF1A2E15BAF30029FD38 /* EnvironmentalReading.swift in Sources */,
+				259AFF1B2E15BAF30029FD38 /* DashboardView.swift in Sources */,
+				25E0519B2E164CE10096B195 /* OxygenLevelTrendView.swift in Sources */,
+				259AFF1C2E15BAF30029FD38 /* SettingsView.swift in Sources */,
+				259AFF1D2E15BAF30029FD38 /* ChatView.swift in Sources */,
+				259AFF1E2E15BAF30029FD38 /* AlertBanner.swift in Sources */,
+				259AFF1F2E15BAF30029FD38 /* LocationManager.swift in Sources */,
+				259AFF202E15BAF30029FD38 /* JubileeEvent.swift in Sources */,
+				259AFF212E15BAF30029FD38 /* JubileePrediction.swift in Sources */,
+				259AFF222E15BAF30029FD38 /* WebSocketManager.swift in Sources */,
+				259AFF232E15BAF30029FD38 /* NotificationPreferences.swift in Sources */,
+				259AFF242E15BAF30029FD38 /* EnvironmentalConditionsView.swift in Sources */,
+				259AFF252E15BAF30029FD38 /* ContentView.swift in Sources */,
+				259AFF262E15BAF30029FD38 /* APIModels.swift in Sources */,
+				259AFF282E15BAF30029FD38 /* APIService.swift in Sources */,
+				259AFF292E15BAF30029FD38 /* ForumView.swift in Sources */,
+				259AFF2A2E15BAF30029FD38 /* CommunityView.swift in Sources */,
+				259AFF2B2E15BAF30029FD38 /* ChatMessage.swift in Sources */,
+				259AFF2C2E15BAF30029FD38 /* CacheManager.swift in Sources */,
+				259AFF2D2E15BAF30029FD38 /* ContributingFactor.swift in Sources */,
+				259AFF2E2E15BAF30029FD38 /* JubileePredictor.swift in Sources */,
+				259AFF2F2E15BAF30029FD38 /* JubileeWatchApp.swift in Sources */,
+				259AFF302E15BAF30029FD38 /* Constants.swift in Sources */,
+				259AFF312E15BAF30029FD38 /* Coordinate.swift in Sources */,
+				259AFF322E15BAF30029FD38 /* LocationPickerView.swift in Sources */,
+				259AFF332E15BAF30029FD38 /* Color+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +587,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9F6A3E2C1234567890ABCD /* JubileeWatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +594,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9F6A482C1234567890ABCD /* JubileeWatchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +648,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 32XZRDTGK3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -349,6 +672,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -389,6 +713,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 32XZRDTGK3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -405,6 +730,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -417,7 +743,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/JubileeWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,7 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JubileeWatch/JubileeWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -469,7 +795,6 @@
 		3D9F6A4F2C1234567890ABCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -488,7 +813,6 @@
 		3D9F6A502C1234567890ABCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -507,7 +831,6 @@
 		3D9F6A522C1234567890ABCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -524,7 +847,6 @@
 		3D9F6A532C1234567890ABCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

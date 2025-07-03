@@ -5,6 +5,9 @@ struct SettingsView: View {
     @AppStorage("highAlertsOnly") private var highAlertsOnly = false
     @AppStorage("darkMode") private var darkMode = true
     @State private var showingLocationPicker = false
+    @State private var homeAddress: String = ""
+    @State private var homeLatitude: Double = 30.5225
+    @State private var homeLongitude: Double = -87.9035
     
     var body: some View {
         NavigationView {
@@ -39,9 +42,10 @@ struct SettingsView: View {
                     Button(action: { showingLocationPicker = true }) {
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("Fairhope Municipal Pier")
+                                Text(homeAddress.isEmpty ? "Fairhope Municipal Pier" : homeAddress)
                                     .foregroundColor(.white)
-                                Text("30.5225° N, 87.9035° W")
+                                    .lineLimit(2)
+                                Text("\(homeLatitude, specifier: "%.4f")° N, \(abs(homeLongitude), specifier: "%.4f")° W")
                                     .font(.caption)
                                     .foregroundColor(.secondary)
                             }
@@ -144,6 +148,24 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showingLocationPicker) {
             LocationPickerView()
+                .onDisappear {
+                    loadHomeLocation()
+                }
+        }
+        .onAppear {
+            loadHomeLocation()
+        }
+    }
+    
+    private func loadHomeLocation() {
+        homeLatitude = UserDefaults.standard.double(forKey: "homeLocationLatitude")
+        homeLongitude = UserDefaults.standard.double(forKey: "homeLocationLongitude")
+        homeAddress = UserDefaults.standard.string(forKey: "homeLocationAddress") ?? ""
+        
+        // If no saved location, use defaults
+        if homeLatitude == 0 && homeLongitude == 0 {
+            homeLatitude = 30.5225
+            homeLongitude = -87.9035
         }
     }
 }
