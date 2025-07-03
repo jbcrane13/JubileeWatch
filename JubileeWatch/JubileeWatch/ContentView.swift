@@ -22,19 +22,18 @@ struct ContentView: View {
                     Label("Map", systemImage: "map.fill")
                 }
                 .tag(2)
-            
-            WebcamFeedsView()
+
+            WebcamView()
                 .tabItem {
-                    Label("Webcams", systemImage: "video.fill")
+                    Label("Webcam", systemImage: "video.fill")
                 }
                 .tag(3)
-            
+
             TrendsView()
                 .tabItem {
                     Label("Trends", systemImage: "chart.line.uptrend.xyaxis")
                 }
                 .tag(4)
-            
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")

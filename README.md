@@ -22,6 +22,10 @@ A comprehensive iOS application for monitoring and predicting jubilee events alo
 - Real-time sighting reports
 - Location-based alerts
 
+### 📹 Live Webcams
+- Streaming views from key shoreline webcams
+- Simple video player controls
+
 ### 📊 Trends & Analytics
 - Historical data visualization
 - Environmental factor analysis
